@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevilGun - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animasi kustom untuk Fade In */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-neutral-950 text-neutral-100 min-h-screen selection:bg-rose-600 selection:text-white antialiased">
+
+    <header class="relative flex h-screen items-center justify-center bg-black overflow-hidden border-b border-neutral-900">
+        <div class="absolute left-4 top-0 bottom-0 flex items-center justify-center pointer-events-none select-none">
+            <p class="text-neutral-800 text-xs md:text-sm tracking-[0.5em] uppercase font-mono [writing-mode:vertical-lr] rotate-180 opacity-50">
+                frontend • frontend • frontend • frontend
+            </p>
+        </div>
+
+        <div class="z-10 flex flex-col sm:flex-row items-center gap-6 animate-fade-in">
+            <div class="relative group">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-rose-600 to-violet-600 rounded-full blur opacity-50 group-hover:opacity-100 transition duration-500"></div>
+                <img 
+                    src="./assets/DevilGun.jfif" 
+                    alt="Profile DevilGun" 
+                    class="relative w-28 h-28 md:w-36 md:h-36 rounded-full object-cover grayscale hover:grayscale-0 transition duration-500 border border-neutral-800"
+                />
+            </div>
+            <div class="text-center sm:text-left">
+                <h1 class="text-5xl md:text-7xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-200 to-neutral-400">
+                    DevilGun
+                </h1>
+                <p class="text-rose-500 font-mono text-sm tracking-widest mt-1 uppercase">Front-End Developer</p>
+            </div>
+        </div>
+
+        <div class="absolute right-4 top-0 bottom-0 flex items-center justify-center pointer-events-none select-none">
+            <p class="text-neutral-800 text-xs md:text-sm tracking-[0.5em] uppercase font-mono [writing-mode:vertical-lr] opacity-50">
+                developer • developer • developer • developer
+            </p>
+        </div>
+    </header>
+
+    <section class="max-w-4xl mx-auto py-32 px-6 flex flex-col items-center justify-center min-h-[50vh]">
+        <blockquote class="text-xl md:text-3xl font-light leading-relaxed text-center text-neutral-300">
+            "Di balik layar hitam dan baris kode, saya adalah seorang <span class="text-white font-semibold underline decoration-rose-500 decoration-2 underline-offset-4">Front-End Developer</span> yang melihat web sebagai kanvas untuk berekspresi. Menggunakan React dan Tailwind CSS, fokus utama saya adalah membangun antarmuka yang tidak hanya fungsional, tetapi juga memiliki karakter visual yang berani dan tegas."
+        </blockquote>
+        <div class="w-12 h-[1px] bg-rose-500 mt-8"></div>
+    </section>
+
+    <section class="bg-black py-24 px-6 border-t border-neutral-900">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase font-mono tracking-[0.3em] text-rose-500 mb-2">Tech Stack</h2>
+                <p class="text-3xl md:text-4xl font-bold tracking-tight text-white">Teknologi yang saya kuasai</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-center">
+                
+                <div class="group flex flex-col items-center justify-center p-6 bg-neutral-900/40 rounded-xl border border-neutral-900 hover:border-neutral-800 hover:bg-neutral-900 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 flex items-center justify-center mb-4 transition duration-300 group-hover:scale-110 filter brightness-90 group-hover:brightness-100">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-full h-full object-contain" />
+                    </div>
+                    <p class="text-xs uppercase tracking-widest font-mono text-neutral-400 group-hover:text-white transition duration-300">HTML</p>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center p-6 bg-neutral-900/40 rounded-xl border border-neutral-900 hover:border-neutral-800 hover:bg-neutral-900 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 flex items-center justify-center mb-4 transition duration-300 group-hover:scale-110 filter brightness-90 group-hover:brightness-100">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-full h-full object-contain" />
+                    </div>
+                    <p class="text-xs uppercase tracking-widest font-mono text-neutral-400 group-hover:text-white transition duration-300">CSS</p>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center p-6 bg-neutral-900/40 rounded-xl border border-neutral-900 hover:border-neutral-800 hover:bg-neutral-900 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 flex items-center justify-center mb-4 transition duration-300 group-hover:scale-110 filter brightness-90 group-hover:brightness-100">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-full h-full object-contain" />
+                    </div>
+                    <p class="text-xs uppercase tracking-widest font-mono text-neutral-400 group-hover:text-white transition duration-300">JavaScript</p>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center p-6 bg-neutral-900/40 rounded-xl border border-neutral-900 hover:border-neutral-800 hover:bg-neutral-900 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 flex items-center justify-center mb-4 transition duration-300 group-hover:scale-110 filter brightness-90 group-hover:brightness-100">
+                        <img src="./assets/Tailwind CSS.svg" alt="Tailwind CSS" class="w-full h-full object-contain" />
+                    </div>
+                    <p class="text-xs uppercase tracking-widest font-mono text-neutral-400 group-hover:text-white transition duration-300">Tailwind CSS</p>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center p-6 bg-neutral-900/40 rounded-xl border border-neutral-900 hover:border-neutral-800 hover:bg-neutral-900 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 flex items-center justify-center mb-4 transition duration-300 group-hover:scale-110 filter brightness-90 group-hover:brightness-100">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-full h-full object-contain" />
+                    </div>
+                    <p class="text-xs uppercase tracking-widest font-mono text-neutral-400 group-hover:text-white transition duration-300">React</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-xs font-mono text-neutral-600 border-t border-neutral-900 bg-black">
+        &copy; <span id="year"></span> DevilGun. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
